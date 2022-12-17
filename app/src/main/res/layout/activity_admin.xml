@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AdminActivity">
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/buttonPrev"
+        android:layout_marginLeft="180dp"
+        android:text="Odjavi se" />
+
+    <Button
+        android:id="@+id/buttonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregled" />
+
+    <TextView
+        android:id="@+id/txtViewPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vnesete go prashanjeto: "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonLogOut"/>
+
+    <EditText
+        android:id="@+id/editTxtPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewPoll"
+        android:layout_marginTop="10dp"
+        android:hint="Poll"
+        android:lines="1"
+        android:maxLines="4"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/txtViewAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTxtPoll"
+        android:layout_marginTop="20dp"
+        android:text="Vnesete gi mozhnite odgovori:"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTxtAns1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/txtViewAnswers"
+        android:layout_marginTop="10dp"
+        android:hint="Mozhen odgovor" />
+
+    <EditText
+        android:id="@+id/editTxtAns2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/editTxtAns1"
+        android:layout_marginTop="8dp"
+        android:hint="Mozhen odgovor" />
+
+    <EditText
+        android:id="@+id/editTxtAns3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/editTxtAns2"
+        android:layout_marginTop="8dp"
+        android:hint="Mozhen odgovor" />
+
+    <EditText
+        android:id="@+id/editTxtAns4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/editTxtAns3"
+        android:layout_marginTop="8dp"
+        android:hint="Mozhen odgovor"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTxtAns5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/editTxtAns4"
+        android:layout_marginTop="8dp"
+        android:hint="Mozhen odgovor"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtViewTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTxtTime"
+        android:layout_marginTop="15dp"
+        android:text="Vnesete do koga kje bide aktiven pollot: "
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTxtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAdd"
+        android:layout_marginTop="8dp"
+        android:hint="Vreme"
+        android:inputType="datetime"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAddPoll"
+        android:text="Dodaj pole za odgovor" />
+
+    <Button
+        android:id="@+id/buttonAddPoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Vnesi Poll" />
+
+
+</RelativeLayout>
